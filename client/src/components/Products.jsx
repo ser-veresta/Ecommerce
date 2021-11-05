@@ -21,7 +21,9 @@ const Products = ({ category = "All", filters, sort }) => {
         const {
           data: { data },
         } = await axios.get(
-          category !== "All" ? `http://localhost:5000/products?category=${category}` : `http://localhost:5000/products`
+          category !== "All"
+            ? `https://ecommerce-1000.herokuapp.com/products?category=${category}`
+            : `https://ecommerce-1000.herokuapp.com/products`
         );
         setProducts(data);
       } catch (error) {
