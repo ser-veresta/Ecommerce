@@ -7,7 +7,6 @@ import errorHandler from "./middlewares/error.js";
 import authRouter from "./routes/authRoutes.js";
 import userRouter from "./routes/userRoutes.js";
 import productRouter from "./routes/productRoutes.js";
-import cartRouter from "./routes/cartRoutes.js";
 import orderRouter from "./routes/orderRoutes.js";
 import stripeRouter from "./routes/stripe.js";
 
