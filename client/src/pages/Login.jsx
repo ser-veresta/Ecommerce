@@ -68,6 +68,15 @@ const Error = styled.div`
   margin: 20px 0px 0px;
 `;
 
+const TestInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 10px;
+  background: #eee;
+  border-radius: 10px;
+`;
+
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -86,6 +95,11 @@ const Login = () => {
     <Container>
       <Wrapper>
         <Title>SIGN IN</Title>
+        <TestInfo>
+          <p>Test User</p>
+          <p>username: test</p>
+          <p>password: 123</p>
+        </TestInfo>
         <Form>
           <Input placeholder="username" value={username} onChange={(e) => setUsername(e.target.value)} />
           <Input placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} />
