@@ -97,8 +97,8 @@ const Login = () => {
         <Title>SIGN IN</Title>
         <TestInfo>
           <p>Test User</p>
-          <p>username: test</p>
-          <p>password: 123</p>
+          <p>username: gopal</p>
+          <p>password: 123123</p>
         </TestInfo>
         <Form>
           <Input placeholder="username" value={username} onChange={(e) => setUsername(e.target.value)} />
